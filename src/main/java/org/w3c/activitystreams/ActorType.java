@@ -6,7 +6,7 @@ package org.w3c.activitystreams;
  * 
  * @author W3C
  */
-public enum ActorTypes {
+public enum ActorType {
 
 	APPLICATION("Application"),
 	GROUP("Group"),
@@ -16,7 +16,7 @@ public enum ActorTypes {
 	
 	private final String name;
 
-	private ActorTypes(String name) {
+	private ActorType(String name) {
 		this.name = name;
 	}
 
@@ -25,9 +25,9 @@ public enum ActorTypes {
 		return this.name;
 	}
 	
-	public static ActorTypes fromString(String value) {
+	public static ActorType fromString(String value) {
 		if (value != null) {  
-		     for (ActorTypes feedType : values()) {  
+		     for (ActorType feedType : values()) {  
 		       if (feedType.name.equals(value)) {  
 		         return feedType;  
 		       }  

@@ -1,5 +1,7 @@
 package org.w3c.activitystreams;
 
+import java.net.URI;
+
 /**
  * A Link is an indirect, qualified reference to a resource identified by a 
  * URL. The fundamental model for links is established by [ RFC5988]. Many 
@@ -18,7 +20,7 @@ public interface Link extends ObjectOrLink, CollectionPageOrLink<Object>, ImageO
 	 * The target resource pointed to
 	 * @return
 	 */
-	String getHref();
+	URI getHref();
 	
 	/**
 	 * Identifies the MIME media type of the referenced resource.

@@ -1,11 +1,13 @@
 package org.w3c.activitystreams;
 
-public interface CollectionPage<E extends ObjectOrLink> extends Collection<E>, CollectionPageOrLink<E> {
+import java.net.URI;
 
-	LinkOrCollection<E> getPartOf();
+public interface CollectionPage<E extends ObjectOrLink> extends Collection<E>, CollectionPageOrLink<Object> {
+
+	URI getPartOf();
 	
-	CollectionPageOrLink<E> getNext();
-	
-	CollectionPageOrLink<E> getPrev();
+//	CollectionPageOrLink<Object> getNext();
+//	
+//	CollectionPageOrLink<Object> getPrev();
 	
 }

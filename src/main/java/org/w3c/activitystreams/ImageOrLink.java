@@ -1,5 +1,5 @@
 package org.w3c.activitystreams;
 
-public interface ImageOrLink {
+public interface ImageOrLink extends ObjectOrLink {
 
 }

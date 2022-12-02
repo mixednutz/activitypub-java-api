@@ -10,19 +10,6 @@ package org.w3c.activitystreams;
  *
  */
 public interface Object extends ObjectOrLink {
-
-	/**
-	 * Identifies the context within which the object exists or an activity was
-	 * performed.
-	 * 
-	 * The notion of "context" used is intentionally vague. The intended
-	 * function is to serve as a means of grouping objects and activities that
-	 * share a common originating context or purpose. An example could be all
-	 * activities relating to a common project or event.
-	 * 
-	 * @return
-	 */
-	String getContext();
 	
 	/**
 	 * A simple, human-readable, plain-text name for the object. HTML markup must not be included. The name may be expressed using multiple language-tagged values.

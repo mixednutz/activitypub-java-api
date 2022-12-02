@@ -1,5 +1,7 @@
 package org.w3c.activitypub;
 
+import java.net.URI;
+
 public interface Actor {
 
 	/**
@@ -12,7 +14,7 @@ public interface Actor {
 	 * A URL to comprised of all the messages produced by the actor;
 	 * @return
 	 */
-	String getOutbox();
+	URI getOutbox();
 	
 	
 }
