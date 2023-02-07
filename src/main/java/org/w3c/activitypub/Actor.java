@@ -8,7 +8,7 @@ public interface Actor {
 	 * A URL to comprised of all the messages received by the actor
 	 * @return
 	 */
-	String getInbox();
+	URI getInbox();
 	
 	/**
 	 * A URL to comprised of all the messages produced by the actor;
